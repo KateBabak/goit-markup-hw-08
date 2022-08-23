@@ -59,14 +59,14 @@
      margin-left: 70px;
      margin-right: auto;
 
-   &.social-list__link {
+   & .social-list__link {
             background-color: rgba(255, 255, 255, 0.1);
             &:hover,
             &:focus {
             background-color: var(--color-blue);
             
                 }
-         &.social-list__icon {
+         & .social-list__icon {
           fill: var(--primary-text-color-theme-dark);
                 
          }
