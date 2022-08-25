@@ -495,11 +495,13 @@ address {
   .page-navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .contact-menu {
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-left: auto;
   }
   .contact-menu__item:not(:last-child) {
     margin-right: 0;
@@ -526,6 +528,9 @@ address {
   .main-menu {
     display: flex;
   }
+  .main-menu .main-menu__link {
+    position: relative;
+  }
   .main-menu .main-menu__link::after {
     height: 4px;
     background-color: var(--color-blue);
@@ -544,26 +549,14 @@ address {
 .main-menu .main-menu__link.active::after {
     transform: scaleX(1);
   }
+  .main-menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
   .contact-menu {
     display: flex;
   }
-  .contact-menu .contact-menu__link::after {
-    height: 4px;
-    background-color: var(--color-blue);
-    content: "";
-    display: block;
-    transform: scaleX(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    top: 46px;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border-radius: 2px;
-  }
-  .contact-menu .contact-menu__link:hover::after,
-.contact-menu .contact-menu__link:focus::after,
-.contact-menu .contact-menu__link.active::after {
-    transform: scaleX(1);
+  .contact-menu .contact-menu__link {
+    position: relative;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -574,15 +567,13 @@ address {
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-header {
     padding: 25px 0;
     border: 1px solid var(--header-border-color);
-  }
-  .page-header__container {
-    justify-content: flex-start;
   }
   .logo {
     color: var(--logo-text-color-black);
