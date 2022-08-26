@@ -1117,7 +1117,7 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 100%;
     height: 92px;
     border: 1px solid var(--svg-fill-color);
     border-radius: 4px;
@@ -1130,5 +1130,19 @@ address {
   }
   .client-list-icon {
     fill: currentColor;
+  }
+  .client-list-item {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list {
+    flex-wrap: nowrap;
+  }
+  .client-list-link {
+    width: 170px;
+  }
+  .client-list-item {
+    width: auto;
   }
 }/*# sourceMappingURL=main.css.map */
