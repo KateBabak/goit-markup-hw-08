@@ -551,7 +551,7 @@ address {
     margin-bottom: 10px;
   }
   .page-header {
-    padding: 25px 0;
+    padding: 20px 0;
     border: 1px solid var(--header-border-color);
   }
   .page-header__container {
@@ -782,11 +782,12 @@ address {
 @media screen and (min-width: 768px) {
   .benefits_list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 30px;
   }
   .benefits_list__item {
-    max-width: 354px;
+    max-width: 48%;
   }
   .svg-icon-wrapper {
     padding: 25px;
@@ -809,6 +810,14 @@ address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits_list {
+    flex-wrap: nowrap;
+  }
+  .benefits_list__item {
+    max-width: auto;
   }
 }
 .about-list__work {
