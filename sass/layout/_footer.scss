@@ -1,79 +1,161 @@
- .footer-list {
-     background-color: var(--background-color-dark);
-     padding: 60px 0;
+ 
+ @media screen and (max-width:767px) {
 
-    &>.container {
-            display: flex;
-            align-items: baseline;
+    .footer-list {
+    background-color: var(--background-color-dark);
+    padding: 60px 0;
+
+&>.container {
+        display: flex;
+        align-items: baseline;
+
+    }
+}
+
+.footer-logo {
+         color: var(--primary-text-color-theme-dark);
+         margin-bottom: 20px;
+         display: block;
+     }
+
+     .footer-list-item:not(:last-child) {
+         margin-bottom: 9px;
+     }
+
+     .maps {
+         color: var(--primary-text-color-theme-dark);
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 1.71;
+         letter-spacing: 0.03em;
+     }
+
+     .adress-link {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 1.71;
+         letter-spacing: 0.03em;
+         color: rgba(255, 255, 255, 0.6);
+     }
+
+
+     .contact-list__link:hover,
+     .contact-list__link:focus {
+         color: var(--color-blue);
+     }
+
+
+     .footer-title {
+         margin-bottom: 20px;
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 16px;
+         letter-spacing: 0.03em;
+         color: var(--primary-text-color-theme-dark);
+
+     }
+
+
+     .footer-social {
+         margin-left: 70px;
+         margin-right: auto;
+
+       & .social-list__link {
+                background-color: rgba(255, 255, 255, 0.1);
+                &:hover,
+                &:focus {
+                background-color: var(--color-blue);
+
+                    }
+             & .social-list__icon {
+              fill: var(--primary-text-color-theme-dark);
+
+             }
+            }
+
+
+     }
+
+
+ }
+ 
+//  .footer-list {
+//      background-color: var(--background-color-dark);
+//      padding: 60px 0;
+
+//     &>.container {
+//             display: flex;
+//             align-items: baseline;
     
-        }
- }
+//         }
+//  }
 
 
- .footer-logo {
-     color: var(--primary-text-color-theme-dark);
-     margin-bottom: 20px;
-     display: block;
- }
+//  .footer-logo {
+//      color: var(--primary-text-color-theme-dark);
+//      margin-bottom: 20px;
+//      display: block;
+//  }
 
- .footer-list-item:not(:last-child) {
-     margin-bottom: 9px;
- }
+//  .footer-list-item:not(:last-child) {
+//      margin-bottom: 9px;
+//  }
 
- .maps {
-     color: var(--primary-text-color-theme-dark);
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.71;
-     letter-spacing: 0.03em;
- }
+//  .maps {
+//      color: var(--primary-text-color-theme-dark);
+//      font-weight: 400;
+//      font-size: 14px;
+//      line-height: 1.71;
+//      letter-spacing: 0.03em;
+//  }
 
- .adress-link {
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.71;
-     letter-spacing: 0.03em;
-     color: rgba(255, 255, 255, 0.6);
- }
-
-
- .contact-list__link:hover,
- .contact-list__link:focus {
-     color: var(--color-blue);
- }
+//  .adress-link {
+//      font-weight: 400;
+//      font-size: 14px;
+//      line-height: 1.71;
+//      letter-spacing: 0.03em;
+//      color: rgba(255, 255, 255, 0.6);
+//  }
 
 
- .footer-title {
-     margin-bottom: 20px;
-     text-transform: uppercase;
-     font-weight: 700;
-     font-size: 14px;
-     line-height: 16px;
-     letter-spacing: 0.03em;
-     color: var(--primary-text-color-theme-dark);
-
- }
+//  .contact-list__link:hover,
+//  .contact-list__link:focus {
+//      color: var(--color-blue);
+//  }
 
 
- .footer-social {
-     margin-left: 70px;
-     margin-right: auto;
+//  .footer-title {
+//      margin-bottom: 20px;
+//      text-transform: uppercase;
+//      font-weight: 700;
+//      font-size: 14px;
+//      line-height: 16px;
+//      letter-spacing: 0.03em;
+//      color: var(--primary-text-color-theme-dark);
 
-   & .social-list__link {
-            background-color: rgba(255, 255, 255, 0.1);
-            &:hover,
-            &:focus {
-            background-color: var(--color-blue);
+//  }
+
+
+//  .footer-social {
+//      margin-left: 70px;
+//      margin-right: auto;
+
+//    & .social-list__link {
+//             background-color: rgba(255, 255, 255, 0.1);
+//             &:hover,
+//             &:focus {
+//             background-color: var(--color-blue);
             
-                }
-         & .social-list__icon {
-          fill: var(--primary-text-color-theme-dark);
+//                 }
+//          & .social-list__icon {
+//           fill: var(--primary-text-color-theme-dark);
                 
-         }
-        }
+//          }
+//         }
 
     
- }
+//  }
 
  
  
