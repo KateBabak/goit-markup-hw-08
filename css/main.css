@@ -981,6 +981,9 @@ address {
     border-radius: 0px 0px 4px 4px;
     width: 48%;
   }
+  .employees-list__item > img {
+    margin: 0 auto;
+  }
   .employees-list__name {
     color: var(--primary-text-color-theme-light);
     font-weight: 500;
@@ -1251,32 +1254,32 @@ address {
   letter-spacing: 0.03em;
 }
 
-.filter-list {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .filter-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .filter-list-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    background-color: var(--another-grey-color);
+    border-radius: 4px;
+    color: var(--primary-text-color-theme-light);
+    padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .filter-list-button:hover, .filter-list-button:focus {
+    color: var(--primary-text-color-theme-dark);
+    background-color: var(--color-blue);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
-
-.filter-list-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-family: inherit;
-  background-color: var(--another-grey-color);
-  border-radius: 4px;
-  color: var(--primary-text-color-theme-light);
-  padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.filter-list-button:hover, .filter-list-button:focus {
-  color: var(--primary-text-color-theme-dark);
-  background-color: var(--color-blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 @media screen and (max-width: 767px) {
   .client-list {
     display: flex;
