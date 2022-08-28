@@ -1262,6 +1262,11 @@ address {
     position: relative;
     overflow: hidden;
   }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+  }
   .portfolio-item-link:hover .overlay,
 .portfolio-item-link:focus .overlay {
     transform: translate(0, 0);
