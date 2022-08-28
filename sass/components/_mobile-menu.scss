@@ -30,6 +30,7 @@
         padding-left: 25px;
         padding-top: 48px;
         padding-bottom: 48px;
+        height: 100%;
 
     }
 
@@ -67,6 +68,7 @@
             letter-spacing: 0.02em;
             color: var(--color-blue);
             margin-bottom: 32px;
+            display: inline-block;
     }
 
         .mobile-mail__link {
@@ -76,6 +78,7 @@
                 letter-spacing: 0.02em;
                 color: #757575;
                 margin-bottom: 64px;
+                display: inline-block;
         }
 
         .mobile-social__list {
@@ -96,6 +99,17 @@
             padding-right: 10px;
             margin-right: 10px;
         }
+
+    .mobile-contact__list { 
+        position: absolute;
+        bottom: 48px;
+    }
+
+    .modal-menu__close-icon:hover,
+    .modal-menu__close-icon:focus {
+        fill: var(--color-blue);
+        
+    }
 
 
     
