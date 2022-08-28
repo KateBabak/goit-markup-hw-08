@@ -69,7 +69,12 @@
                         display: flex;
                         flex-wrap: wrap;
                         gap: 27px;
+
                     }
+
+                .portfolio-item {
+                    max-width: 354px;
+                }
 
                 .portfolio-item-link:hover .overlay, 
                  .portfolio-item-link:focus .overlay {
@@ -110,6 +115,11 @@
                     line-height: 30px;
                     letter-spacing: 0.03em;
                 }
+
+            .portfolio-item-img {
+                min-height: 294px;
+                max-width: 354px;
+            }
 
          }
 

@@ -1267,6 +1267,9 @@ address {
     flex-wrap: wrap;
     gap: 27px;
   }
+  .portfolio-item {
+    max-width: 354px;
+  }
   .portfolio-item-link:hover .overlay,
 .portfolio-item-link:focus .overlay {
     transform: translate(0, 0);
@@ -1297,6 +1300,10 @@ address {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
+  }
+  .portfolio-item-img {
+    min-height: 294px;
+    max-width: 354px;
   }
 }
 @media screen and (max-width: 767px) {
