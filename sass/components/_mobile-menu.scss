@@ -83,6 +83,7 @@
 
         .mobile-social__list {
             display: flex;
+            flex-wrap: wrap;
         }
 
 
@@ -109,10 +110,7 @@
     .modal-menu__close-icon:focus {
         fill: var(--color-blue);
         
-    }
-
-
-    
+    }   
 }
 
 
