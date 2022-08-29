@@ -8,6 +8,7 @@
             justify-content: start;
             margin-bottom: 50px;
             flex-wrap: wrap;
+            row-gap: 15px;
     
         }
     
@@ -40,7 +41,7 @@
         display: flex;
         gap: 8px;
         justify-content: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
     }
 
@@ -67,8 +68,12 @@
             }
     }
 
+}
 
-   
+
+@media screen and (min-width:1200px) {
+    .filter-list {
+        margin-bottom: 50px;}
 
 }
 

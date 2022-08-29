@@ -29,6 +29,7 @@
                     letter-spacing: 0.03em;
                     text-transform: uppercase;
                     margin-bottom: 10px;
+                    text-align: center;
                 }
         
                 .benefits_list__description {
@@ -51,7 +52,8 @@
         }
     
         .benefits_list__item {
-            max-width: 48%;
+            max-width: 354px;
+            margin: 0 auto;
         }
     
         .svg-icon-wrapper {
@@ -70,6 +72,7 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 10px;
+           
         }
     
         .benefits_list__description {
